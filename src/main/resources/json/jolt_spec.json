@@ -1,0 +1,25 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "itinerary": {
+        "reservationId": {
+          "crsConfirmationId": "itinerary.reservationId.crsConfirmationId.string",
+          "crsPageNumber": "itinerary.reservationId.crsPageNumber"
+        },
+        "reservations": {
+          "0": {
+            "property": {
+              "propertyId": "itinerary.reservations.array[0].property.com\\.hyatt\\.choice\\.resort\\.Property.propertyId",
+              "brand": {
+                "*": "itinerary.reservations.array[0].property.com\\.hyatt\\.choice\\.resort\\.Property.brand.com\\.hyatt\\.choice\\.resort\\.Brand.&"
+              }
+            },
+            "action": "itinerary.reservations.array[0].action.com\\.hyatt\\.choice\\.enums\\.ReservationAction"
+          }
+        }
+      },
+      "transactionId": "transactionId"
+    }
+  }
+]

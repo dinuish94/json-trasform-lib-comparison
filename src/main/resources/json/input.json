@@ -1,0 +1,22 @@
+{
+  "itinerary": {
+    "reservationId": {
+      "crsConfirmationId": "24955269",
+      "crsPageNumber": 2345
+    },
+    "reservations": [
+      {
+        "property": {
+          "propertyId": "JEDHR",
+          "brand": {
+            "brandId": "HYATT",
+            "name": "ABC",
+            "logo": null
+          }
+        },
+        "action": "ADD"
+      }
+    ]
+  },
+  "transactionId": "2801913"
+}
