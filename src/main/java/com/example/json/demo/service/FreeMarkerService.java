@@ -9,9 +9,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Service
@@ -28,16 +26,14 @@ public class FreeMarkerService implements JsonTransformService {
 
             // Build the data-model
             Map<String, Object> data = new HashMap<String, Object>();
-            data.put("message", "Hello World!");
-
-            //List parsing
-            List<String> countries = new ArrayList<String>();
-            countries.add("India");
-            countries.add("United States");
-            countries.add("Germany");
-            countries.add("France");
-
-            data.put("countries", countries);
+            data.put("crsConfirmationId", "24955269");
+            data.put("crsPageNumber", "null");
+            data.put("propertyId", "JEDHR");
+            data.put("brandId", "HYATT");
+            data.put("brandName", "null");
+            data.put("brandLogo", "null");
+            data.put("reservationAction", "ADD");
+            data.put("transactionId", "2801913");
 
             // Console output
             Writer out = new StringWriter();
