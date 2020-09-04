@@ -1,5 +1,5 @@
-#JSON Transformation Libraries Comparison
+# JSON Transformation Libraries Comparison
 
-##Implementations
+## Implementations
 * JOLT - com.example.json.demo.service.JoltService
 * Freemarker - com.example.json.demo.service.FreeMarkerService
