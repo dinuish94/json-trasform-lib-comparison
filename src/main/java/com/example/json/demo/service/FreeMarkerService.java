@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class FreeMarkerService implements JsonTransformService {
+public class FreeMarkerService extends JsonTransformService {
 
     @Override
     public Object transform() {
@@ -24,8 +24,7 @@ public class FreeMarkerService implements JsonTransformService {
         try {
             Template template = cfg.getTemplate("json/freemarker.ftl");
 
-            // Build the data-model
-            Map<String, Object> data = new HashMap<String, Object>();
+            Map<String, Object> data = new HashMap<>();
             data.put("crsConfirmationId", "24955269");
             data.put("crsPageNumber", "null");
             data.put("propertyId", "JEDHR");
@@ -35,7 +34,6 @@ public class FreeMarkerService implements JsonTransformService {
             data.put("reservationAction", "ADD");
             data.put("transactionId", "2801913");
 
-            // Console output
             Writer out = new StringWriter();
             template.process(data, out);
             return out.toString();

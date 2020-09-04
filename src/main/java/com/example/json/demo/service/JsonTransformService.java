@@ -1,6 +1,7 @@
 package com.example.json.demo.service;
 
-public interface JsonTransformService {
+public abstract class JsonTransformService {
 
-    Object transform();
+    public abstract Object transform();
+
 }

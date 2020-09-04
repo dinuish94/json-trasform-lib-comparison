@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class JoltService implements JsonTransformService {
+public class JoltService extends JsonTransformService {
 
     @Override
     public Object transform() {
