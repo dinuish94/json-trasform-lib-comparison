@@ -7,6 +7,7 @@
 * Path for different implementations
     * Freemarker - freemarker
     * JOLT - jolt
+    * Liquid - liquid
 ## Implementations
 * JOLT - com.example.json.demo.service.JoltService
 * Freemarker - com.example.json.demo.service.FreeMarkerService
