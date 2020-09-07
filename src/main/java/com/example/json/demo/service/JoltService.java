@@ -12,7 +12,7 @@ public class JoltService extends JsonTransformService {
     @Override
     public Object transform() {
 
-        List chainrSpecJSON = JsonUtils.classpathToList("/json/jolt_spec.json");
+        List chainrSpecJSON = JsonUtils.classpathToList("/template/jolt.json");
         Chainr chainr = Chainr.fromSpec(chainrSpecJSON);
 
         Object inputJSON = JsonUtils.classpathToObject("/json/input.json");

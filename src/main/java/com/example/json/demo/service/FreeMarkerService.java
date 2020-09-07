@@ -22,7 +22,7 @@ public class FreeMarkerService extends JsonTransformService {
         cfg.setClassForTemplateLoading(this.getClass(), "/");
 
         try {
-            Template template = cfg.getTemplate("json/freemarker.ftl");
+            Template template = cfg.getTemplate("template/freemarker.ftl");
 
             Map<String, Object> data = new HashMap<>();
             data.put("crsConfirmationId", "24955269");
