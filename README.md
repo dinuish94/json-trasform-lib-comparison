@@ -3,8 +3,8 @@
 ## How to Run
 * Clone the project and go to the project root directory.
 * Run `mvn spring-boot:run`
-* Send a `GET` request to `http://localhost:8080/demo/freemarker` (to execute freemerker example.)
-* Path for different implementations
+* Send a `GET` request to `http://localhost:8080/demo/freemarker` (to execute the freemerker example)
+* Paths for different implementations
     * Freemarker - freemarker
     * JOLT - jolt
     * Liquid - liquid

@@ -26,10 +26,10 @@ public class FreeMarkerService extends JsonTransformService {
 
             Map<String, Object> data = new HashMap<>();
             data.put("crsConfirmationId", "24955269");
-            data.put("crsPageNumber", "null");
+            data.put("crsPageNumber", "2345");
             data.put("propertyId", "JEDHR");
             data.put("brandId", "HYATT");
-            data.put("brandName", "null");
+            data.put("brandName", "ABC");
             data.put("brandLogo", "null");
             data.put("reservationAction", "ADD");
             data.put("transactionId", "2801913");
