@@ -31,7 +31,6 @@ public class FreeMarkerService extends JsonTransformService {
             data.put("brandId", "HYATT");
             data.put("brandName", "ABC");
             data.put("brandLogo", "null");
-            data.put("reservationAction", "ADD");
             data.put("transactionId", "2801913");
 
             Writer out = new StringWriter();

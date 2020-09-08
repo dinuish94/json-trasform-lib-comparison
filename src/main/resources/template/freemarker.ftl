@@ -19,9 +19,6 @@
 							}
 						}
 					}
-				},
-				"action": {
-					"com.hyatt.choice.enums.ReservationAction": "${reservationAction}"
 				}
 			}]
 		}

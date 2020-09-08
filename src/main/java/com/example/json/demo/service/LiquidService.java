@@ -22,7 +22,6 @@ public class LiquidService extends JsonTransformService {
         data.put("brandId", "HYATT");
         data.put("brandName", "ABC");
         data.put("brandLogo", "null");
-        data.put("reservationAction", "ADD");
         data.put("transactionId", "2801913");
 
         return template.render(data);

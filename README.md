@@ -23,6 +23,11 @@
 
 ## Transformation JSON
 
+### Features in the example
+* Remaining a value as it is (transactionId)
+* Changing value location(crsPageNumber, brandId etc.)
+* Removing a value (Removing itinerary.reservations.action)
+
 ### Input
 
 ```json
@@ -75,9 +80,6 @@
                                 }
                             }
                         }
-                    },
-                    "action": {
-                        "com.hyatt.choice.enums.ReservationAction": "ADD"
                     }
                 }
             ]

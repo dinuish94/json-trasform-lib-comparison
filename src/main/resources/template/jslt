@@ -20,9 +20,6 @@
                                 }
                             }
                         }
-                    },
-                    "action": {
-                        "com.hyatt.choice.enums.ReservationAction": .itinerary.reservations[0].action
                     }
                 }
             ]

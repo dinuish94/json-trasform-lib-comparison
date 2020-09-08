@@ -14,8 +14,7 @@
               "brand": {
                 "*": "itinerary.reservations.array[0].property.com\\.hyatt\\.choice\\.resort\\.Property.brand.com\\.hyatt\\.choice\\.resort\\.Brand.&"
               }
-            },
-            "action": "itinerary.reservations.array[0].action.com\\.hyatt\\.choice\\.enums\\.ReservationAction"
+            }
           }
         }
       },
