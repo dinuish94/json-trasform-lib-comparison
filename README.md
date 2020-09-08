@@ -11,6 +11,7 @@
     * JSONata - jsonata
     * JMESPath - jmespath
     * JSLT - jslt
+    * Swamill - swamill
 ## Implementations
 * JOLT - com.example.json.demo.service.JoltService
 * Freemarker - com.example.json.demo.service.FreeMarkerService
@@ -18,6 +19,7 @@
 * JSONata - com.example.json.demo.service.JsonataService
 * JMESPath - com.example.json.demo.service.JmespathService
 * JSLT - com.example.json.demo.service.JsltService
+* Swamill - com.example.json.demo.service.SwamillService
 
 ## Transformation JSON
 

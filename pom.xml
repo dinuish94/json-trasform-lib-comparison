@@ -20,8 +20,9 @@
         <freemarker.version>2.3.30</freemarker.version>
         <liqp.version>0.7.9</liqp.version>
         <jsonata.version>1.4.8</jsonata.version>
-        <jmespath-jackson.version>0.5.0</jmespath-jackson.version>
+        <jmespath.version>0.5.0</jmespath.version>
         <jslt.version>0.1.10</jslt.version>
+        <sawmill.version>2.0.14</sawmill.version>
     </properties>
 
     <dependencies>
@@ -62,13 +63,19 @@
         <dependency>
             <groupId>io.burt</groupId>
             <artifactId>jmespath-jackson</artifactId>
-            <version>${jmespath-jackson.version}</version>
+            <version>${jmespath.version}</version>
         </dependency>
         <!--        JSLT          -->
         <dependency>
             <groupId>com.schibsted.spt.data</groupId>
             <artifactId>jslt</artifactId>
             <version>${jslt.version}</version>
+        </dependency>
+        <!--        Sawmill      -->
+        <dependency>
+            <groupId>io.logz.sawmill</groupId>
+            <artifactId>sawmill-core</artifactId>
+            <version>${sawmill.version}</version>
         </dependency>
 
         <dependency>

@@ -1,0 +1,35 @@
+{
+    steps :[
+        {
+          removeField: {
+            config: {
+              path: "itinerary.reservationId.crsConfirmationId"
+            }
+          }
+        },
+        {
+          removeField: {
+            config: {
+              path: "itinerary.reservations"
+            }
+          }
+        },
+
+        {
+            addField: {
+            config: {
+                    path: "itinerary.reservationId.crsConfirmationId.string"
+                    value: "{{itinerary.reservationId.crsConfirmationId}}"
+                }
+            }
+        },
+        {
+            addField: {
+            config: {
+                    path: "itinerary.reservations.array[0].property.propertyId"
+                    value: "{{itinerary.reservations[0].property.propertyId}}"
+                }
+            }
+        }
+    ]
+}

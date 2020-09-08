@@ -6,6 +6,7 @@ import com.example.json.demo.service.JoltService;
 import com.example.json.demo.service.JsltService;
 import com.example.json.demo.service.JsonataService;
 import com.example.json.demo.service.LiquidService;
+import com.example.json.demo.service.SwamillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -28,6 +29,8 @@ public class JsonTransformController {
     JmespathService jmespathService;
     @Autowired
     JsltService jsltService;
+    @Autowired
+    SwamillService swamillService;
 
     @GetMapping(path = "/jolt", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity transformWithJolt() {
@@ -37,6 +40,7 @@ public class JsonTransformController {
 
     @GetMapping(path = "/freemarker", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity transformWithFreemarker() {
+
 
         return new ResponseEntity(freeMarkerService.transform(), HttpStatus.OK);
     }
@@ -63,6 +67,12 @@ public class JsonTransformController {
     public ResponseEntity transformWithJslt() throws Exception {
 
         return new ResponseEntity(jsltService.transform(), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/swamill", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity transformWithSwamill() throws Exception {
+
+        return new ResponseEntity(swamillService.transform(), HttpStatus.OK);
     }
 
 }
