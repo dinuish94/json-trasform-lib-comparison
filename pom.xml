@@ -20,6 +20,7 @@
         <freemarker.version>2.3.30</freemarker.version>
         <liqp.version>0.7.9</liqp.version>
         <jsonata.version>1.4.8</jsonata.version>
+        <jmespath-jackson.version>0.5.0</jmespath-jackson.version>
     </properties>
 
     <dependencies>
@@ -56,6 +57,13 @@
             <artifactId>JSONata4Java</artifactId>
             <version>${jsonata.version}</version>
         </dependency>
+        <!--        JMESPath     -->
+        <dependency>
+            <groupId>io.burt</groupId>
+            <artifactId>jmespath-jackson</artifactId>
+            <version>${jmespath-jackson.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

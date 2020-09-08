@@ -1,6 +1,7 @@
 package com.example.json.demo.controller;
 
 import com.example.json.demo.service.FreeMarkerService;
+import com.example.json.demo.service.JmespathService;
 import com.example.json.demo.service.JoltService;
 import com.example.json.demo.service.JsonataService;
 import com.example.json.demo.service.LiquidService;
@@ -22,6 +23,8 @@ public class JsonTransformController {
     LiquidService liquidService;
     @Autowired
     JsonataService jsonataService;
+    @Autowired
+    JmespathService jmespathService;
 
     @GetMapping(path = "/jolt", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity transformWithJolt() {
@@ -45,6 +48,12 @@ public class JsonTransformController {
     public ResponseEntity transformWithJsonata() throws Exception {
 
         return new ResponseEntity(jsonataService.transform(), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/jmespath", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity transformWithJmespath() throws Exception {
+
+        return new ResponseEntity(jmespathService.transform(), HttpStatus.OK);
     }
 
 }
