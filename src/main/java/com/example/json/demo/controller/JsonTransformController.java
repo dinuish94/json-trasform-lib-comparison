@@ -2,6 +2,7 @@ package com.example.json.demo.controller;
 
 import com.example.json.demo.service.FreeMarkerService;
 import com.example.json.demo.service.JoltService;
+import com.example.json.demo.service.JsonataService;
 import com.example.json.demo.service.LiquidService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,8 +10,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.io.IOException;
 
 @RestController
 public class JsonTransformController {
@@ -21,6 +20,8 @@ public class JsonTransformController {
     FreeMarkerService freeMarkerService;
     @Autowired
     LiquidService liquidService;
+    @Autowired
+    JsonataService jsonataService;
 
     @GetMapping(path = "/jolt", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity transformWithJolt() {
@@ -35,9 +36,15 @@ public class JsonTransformController {
     }
 
     @GetMapping(path = "/liquid", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity transformWithLiquid() throws IOException {
+    public ResponseEntity transformWithLiquid() throws Exception {
 
         return new ResponseEntity(liquidService.transform(), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/jsonata", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity transformWithJsonata() throws Exception {
+
+        return new ResponseEntity(jsonataService.transform(), HttpStatus.OK);
     }
 
 }

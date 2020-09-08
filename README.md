@@ -8,10 +8,12 @@
     * Freemarker - freemarker
     * JOLT - jolt
     * Liquid - liquid
+    * JSONata - jsonata
 ## Implementations
 * JOLT - com.example.json.demo.service.JoltService
 * Freemarker - com.example.json.demo.service.FreeMarkerService
 * Liquid - com.example.json.demo.service.LiquidService
+* JSONata - com.example.json.demo.service.JsonataService
 
 ## Transformation JSON
 

@@ -19,6 +19,7 @@
         <jolt.version>0.1.1</jolt.version>
         <freemarker.version>2.3.30</freemarker.version>
         <liqp.version>0.7.9</liqp.version>
+        <jsonata.version>1.4.8</jsonata.version>
     </properties>
 
     <dependencies>
@@ -48,6 +49,12 @@
             <groupId>nl.big-o</groupId>
             <artifactId>liqp</artifactId>
             <version>${liqp.version}</version>
+        </dependency>
+        <!--        JSONata     -->
+        <dependency>
+            <groupId>com.ibm.jsonata4java</groupId>
+            <artifactId>JSONata4Java</artifactId>
+            <version>${jsonata.version}</version>
         </dependency>
 
         <dependency>
