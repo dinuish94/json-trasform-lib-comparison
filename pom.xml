@@ -21,6 +21,7 @@
         <liqp.version>0.7.9</liqp.version>
         <jsonata.version>1.4.8</jsonata.version>
         <jmespath-jackson.version>0.5.0</jmespath-jackson.version>
+        <jslt.version>0.1.10</jslt.version>
     </properties>
 
     <dependencies>
@@ -63,7 +64,12 @@
             <artifactId>jmespath-jackson</artifactId>
             <version>${jmespath-jackson.version}</version>
         </dependency>
-
+        <!--        JSLT          -->
+        <dependency>
+            <groupId>com.schibsted.spt.data</groupId>
+            <artifactId>jslt</artifactId>
+            <version>${jslt.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

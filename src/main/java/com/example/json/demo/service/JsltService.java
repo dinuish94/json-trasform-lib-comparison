@@ -1,19 +1,19 @@
 package com.example.json.demo.service;
 
-import com.api.jsonata4java.expressions.Expressions;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.schibsted.spt.data.jslt.Expression;
+import com.schibsted.spt.data.jslt.Parser;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JsonataService extends JsonTransformService {
+public class JsltService extends JsonTransformService {
 
     @Override
     public Object transform() throws Exception {
 
         JsonNode input = readInputJsonAsJsonNode();
-        String expression = readTemplate("jsonata").replaceAll("[\r\n]+", " ");
-        Expressions expr = Expressions.parse(expression);
-        JsonNode result = expr.evaluate(input);
+        Expression jslt = Parser.compileString(readTemplate("jslt"));
+        JsonNode result = jslt.apply(input);
         return jsonNodeToJsonString(result);
     }
 }

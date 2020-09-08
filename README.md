@@ -10,12 +10,14 @@
     * Liquid - liquid
     * JSONata - jsonata
     * JMESPath - jmespath
+    * JSLT - jslt
 ## Implementations
 * JOLT - com.example.json.demo.service.JoltService
 * Freemarker - com.example.json.demo.service.FreeMarkerService
 * Liquid - com.example.json.demo.service.LiquidService
 * JSONata - com.example.json.demo.service.JsonataService
 * JMESPath - com.example.json.demo.service.JmespathService
+* JSLT - com.example.json.demo.service.JsltService
 
 ## Transformation JSON
 
